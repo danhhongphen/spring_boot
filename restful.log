@@ -1,0 +1,197 @@
+"2021-10-26 22:11:29 - Starting RestfulWebServicesApplication using Java 1.8.0_291 on DESKTOP-0MP5R12 with PID 52444 (D:\Learning\Project\restful-web-services\target\classes started by prima in D:\Learning\Project\restful-web-services)
+""2021-10-26 22:11:29 - No active profile set, falling back to default profiles: default
+""2021-10-26 22:11:29 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-26 22:11:29 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-26 22:11:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-26 22:11:32 - Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+""2021-10-26 22:11:32 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3964c5bb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:11:32 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:11:33 - Tomcat initialized with port(s): 8080 (http)
+""2021-10-26 22:11:33 - Starting service [Tomcat]
+""2021-10-26 22:11:33 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+""2021-10-26 22:11:33 - Initializing Spring embedded WebApplicationContext
+""2021-10-26 22:11:33 - Root WebApplicationContext: initialization completed in 3210 ms
+""2021-10-26 22:11:33 - HikariPool-1 - Starting...
+""2021-10-26 22:11:33 - HikariPool-1 - Start completed.
+""2021-10-26 22:11:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2021-10-26 22:11:33 - HHH000412: Hibernate ORM core version 5.4.32.Final
+""2021-10-26 22:11:34 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2021-10-26 22:11:34 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+""2021-10-26 22:11:34 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2021-10-26 22:11:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:11:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2021-10-26 22:11:35 - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-10-26 22:11:35 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2021-10-26 22:11:35 - Will secure Ant [pattern='/authenticate', POST] with []
+""2021-10-26 22:11:35 - Will secure Ant [pattern='/**', OPTIONS] with []
+""2021-10-26 22:11:35 - Will secure Ant [pattern='/', GET] with []
+""2021-10-26 22:11:35 - Will secure Ant [pattern='/h2-console/**/**'] with []
+""2021-10-26 22:11:35 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53f326bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cd51282, org.springframework.security.web.header.HeaderWriterFilter@af57b1, org.springframework.security.web.authentication.logout.LogoutFilter@49cf1b07, com.phanhlearning.rest.webservices.restfulwebservices.auth.jwt.JwtTokenAuthorizationOncePerRequestFilter@2dcd18c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15c6c122, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12d17f56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56645d51, org.springframework.security.web.session.SessionManagementFilter@7cd6cbba, org.springframework.security.web.access.ExceptionTranslationFilter@76663b86, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bc9cb67]
+""2021-10-26 22:11:36 - LiveReload server is running on port 35729
+""2021-10-26 22:11:36 - Tomcat started on port(s): 8080 (http) with context path ''
+""2021-10-26 22:11:36 - Context refreshed
+""2021-10-26 22:11:36 - Found 1 custom documentation plugin(s)
+""2021-10-26 22:11:36 - Scanning for api listing references
+""2021-10-26 22:11:37 - Generating unique operation named: helloWorldBeanUsingGET_1
+""2021-10-26 22:11:37 - Generating unique operation named: helloWorldBeanUsingGET_2
+""2021-10-26 22:11:37 - Generating unique operation named: handleUsingGET_1
+""2021-10-26 22:11:37 - Generating unique operation named: deleteTodoUsingDELETE_1
+""2021-10-26 22:11:37 - Generating unique operation named: getAllTodosUsingGET_1
+""2021-10-26 22:11:37 - Generating unique operation named: getTodoUsingGET_1
+""2021-10-26 22:11:37 - Generating unique operation named: saveTodoUsingPOST_1
+""2021-10-26 22:11:37 - Generating unique operation named: updateTodoUsingPUT_1
+""2021-10-26 22:11:37 - Started RestfulWebServicesApplication in 8.055 seconds (JVM running for 9.525)
+""2021-10-26 22:11:37 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-10-26 22:11:37 - Initializing Servlet 'dispatcherServlet'
+""2021-10-26 22:11:37 - Completed initialization in 2 ms
+""2021-10-26 22:14:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:14:08 - HikariPool-1 - Shutdown initiated...
+""2021-10-26 22:14:08 - HikariPool-1 - Shutdown completed.
+""2021-10-26 22:14:15 - Starting RestfulWebServicesApplication using Java 1.8.0_291 on DESKTOP-0MP5R12 with PID 47848 (D:\Learning\Project\restful-web-services\target\classes started by prima in D:\Learning\Project\restful-web-services)
+""2021-10-26 22:14:15 - No active profile set, falling back to default profiles: default
+""2021-10-26 22:14:15 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-26 22:14:15 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-26 22:14:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-26 22:14:18 - Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces.
+""2021-10-26 22:14:19 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@60a21975' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:14:19 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:14:19 - Tomcat initialized with port(s): 8080 (http)
+""2021-10-26 22:14:19 - Starting service [Tomcat]
+""2021-10-26 22:14:19 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+""2021-10-26 22:14:20 - Initializing Spring embedded WebApplicationContext
+""2021-10-26 22:14:20 - Root WebApplicationContext: initialization completed in 4828 ms
+""2021-10-26 22:14:20 - HikariPool-1 - Starting...
+""2021-10-26 22:14:20 - HikariPool-1 - Start completed.
+""2021-10-26 22:14:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2021-10-26 22:14:21 - HHH000412: Hibernate ORM core version 5.4.32.Final
+""2021-10-26 22:14:21 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2021-10-26 22:14:21 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+""2021-10-26 22:14:23 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2021-10-26 22:14:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:14:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2021-10-26 22:14:24 - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-10-26 22:14:24 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2021-10-26 22:14:24 - Will secure Ant [pattern='/authenticate', POST] with []
+""2021-10-26 22:14:24 - Will secure Ant [pattern='/**', OPTIONS] with []
+""2021-10-26 22:14:24 - Will secure Ant [pattern='/', GET] with []
+""2021-10-26 22:14:24 - Will secure Ant [pattern='/h2-console/**/**'] with []
+""2021-10-26 22:14:24 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@634c4f62, org.springframework.security.web.context.SecurityContextPersistenceFilter@28143d9f, org.springframework.security.web.header.HeaderWriterFilter@2a91b8c0, org.springframework.security.web.authentication.logout.LogoutFilter@19b13f26, com.phanhlearning.rest.webservices.restfulwebservices.auth.jwt.JwtTokenAuthorizationOncePerRequestFilter@28aebd20, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5742f616, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25f08b31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2308eeef, org.springframework.security.web.session.SessionManagementFilter@7871bc19, org.springframework.security.web.access.ExceptionTranslationFilter@7473ddfd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@360ec14d]
+""2021-10-26 22:14:25 - LiveReload server is running on port 35729
+""2021-10-26 22:14:25 - Tomcat started on port(s): 8080 (http) with context path ''
+""2021-10-26 22:14:25 - Context refreshed
+""2021-10-26 22:14:25 - Found 1 custom documentation plugin(s)
+""2021-10-26 22:14:25 - Scanning for api listing references
+""2021-10-26 22:14:26 - Generating unique operation named: helloWorldBeanUsingGET_1
+""2021-10-26 22:14:26 - Generating unique operation named: helloWorldBeanUsingGET_2
+""2021-10-26 22:14:26 - Generating unique operation named: handleUsingGET_1
+""2021-10-26 22:14:26 - Generating unique operation named: deleteTodoUsingDELETE_1
+""2021-10-26 22:14:26 - Generating unique operation named: getAllTodosUsingGET_1
+""2021-10-26 22:14:26 - Generating unique operation named: getTodoUsingGET_1
+""2021-10-26 22:14:26 - Generating unique operation named: saveTodoUsingPOST_1
+""2021-10-26 22:14:26 - Generating unique operation named: updateTodoUsingPUT_1
+""2021-10-26 22:14:26 - Started RestfulWebServicesApplication in 12.525 seconds (JVM running for 14.668)
+""2021-10-26 22:14:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-10-26 22:14:27 - Initializing Servlet 'dispatcherServlet'
+""2021-10-26 22:14:27 - Completed initialization in 3 ms
+""2021-10-26 22:22:26 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:22:26 - HikariPool-1 - Shutdown initiated...
+""2021-10-26 22:22:26 - HikariPool-1 - Shutdown completed.
+""2021-10-26 22:22:35 - Starting RestfulWebServicesApplication using Java 1.8.0_291 on DESKTOP-0MP5R12 with PID 54248 (D:\Learning\Project\restful-web-services\target\classes started by prima in D:\Learning\Project\restful-web-services)
+""2021-10-26 22:22:35 - No active profile set, falling back to default profiles: default
+""2021-10-26 22:22:35 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-26 22:22:35 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-26 22:22:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-26 22:22:41 - Finished Spring Data repository scanning in 173 ms. Found 1 JPA repository interfaces.
+""2021-10-26 22:22:42 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@45575548' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:22:42 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:22:43 - Tomcat initialized with port(s): 8080 (http)
+""2021-10-26 22:22:43 - Starting service [Tomcat]
+""2021-10-26 22:22:43 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+""2021-10-26 22:22:43 - Initializing Spring embedded WebApplicationContext
+""2021-10-26 22:22:43 - Root WebApplicationContext: initialization completed in 7809 ms
+""2021-10-26 22:22:43 - HikariPool-1 - Starting...
+""2021-10-26 22:22:44 - HikariPool-1 - Start completed.
+""2021-10-26 22:22:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2021-10-26 22:22:44 - HHH000412: Hibernate ORM core version 5.4.32.Final
+""2021-10-26 22:22:44 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2021-10-26 22:22:45 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+""2021-10-26 22:22:46 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2021-10-26 22:22:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:22:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2021-10-26 22:22:48 - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-10-26 22:22:48 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2021-10-26 22:22:48 - Will secure Ant [pattern='/authenticate', POST] with []
+""2021-10-26 22:22:48 - Will secure Ant [pattern='/**', OPTIONS] with []
+""2021-10-26 22:22:48 - Will secure Ant [pattern='/', GET] with []
+""2021-10-26 22:22:48 - Will secure Ant [pattern='/h2-console/**/**'] with []
+""2021-10-26 22:22:48 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52a450a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@1134f270, org.springframework.security.web.header.HeaderWriterFilter@3828e87a, org.springframework.security.web.authentication.logout.LogoutFilter@4ed21422, com.phanhlearning.rest.webservices.restfulwebservices.auth.jwt.JwtTokenAuthorizationOncePerRequestFilter@5eea26ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aa6cc65, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fd8bb77, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a0d7424, org.springframework.security.web.session.SessionManagementFilter@4dbb984d, org.springframework.security.web.access.ExceptionTranslationFilter@354efcd1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20dd1789]
+""2021-10-26 22:22:49 - LiveReload server is running on port 35729
+""2021-10-26 22:22:50 - Tomcat started on port(s): 8080 (http) with context path ''
+""2021-10-26 22:22:50 - Context refreshed
+""2021-10-26 22:22:50 - Found 1 custom documentation plugin(s)
+""2021-10-26 22:22:50 - Scanning for api listing references
+""2021-10-26 22:22:50 - Generating unique operation named: helloWorldBeanUsingGET_1
+""2021-10-26 22:22:50 - Generating unique operation named: helloWorldBeanUsingGET_2
+""2021-10-26 22:22:50 - Generating unique operation named: handleUsingGET_1
+""2021-10-26 22:22:50 - Generating unique operation named: deleteTodoUsingDELETE_1
+""2021-10-26 22:22:50 - Generating unique operation named: getAllTodosUsingGET_1
+""2021-10-26 22:22:50 - Generating unique operation named: getTodoUsingGET_1
+""2021-10-26 22:22:50 - Generating unique operation named: saveTodoUsingPOST_1
+""2021-10-26 22:22:50 - Generating unique operation named: updateTodoUsingPUT_1
+""2021-10-26 22:22:50 - Started RestfulWebServicesApplication in 16.867 seconds (JVM running for 20.482)
+""2021-10-26 22:22:51 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-10-26 22:22:51 - Initializing Servlet 'dispatcherServlet'
+""2021-10-26 22:22:51 - Completed initialization in 5 ms
+""2021-10-26 22:25:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:25:39 - HikariPool-1 - Shutdown initiated...
+""2021-10-26 22:25:39 - HikariPool-1 - Shutdown completed.
+""2021-10-26 22:25:49 - Starting RestfulWebServicesApplication using Java 1.8.0_291 on DESKTOP-0MP5R12 with PID 45900 (D:\Learning\Project\restful-web-services\target\classes started by prima in D:\Learning\Project\restful-web-services)
+""2021-10-26 22:25:49 - No active profile set, falling back to default profiles: default
+""2021-10-26 22:25:49 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-26 22:25:49 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-26 22:25:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-26 22:25:55 - Finished Spring Data repository scanning in 138 ms. Found 1 JPA repository interfaces.
+""2021-10-26 22:25:56 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2b93bfb0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:25:56 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-26 22:25:57 - Tomcat initialized with port(s): 8080 (http)
+""2021-10-26 22:25:57 - Starting service [Tomcat]
+""2021-10-26 22:25:57 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+""2021-10-26 22:25:57 - Initializing Spring embedded WebApplicationContext
+""2021-10-26 22:25:57 - Root WebApplicationContext: initialization completed in 8032 ms
+""2021-10-26 22:25:58 - HikariPool-1 - Starting...
+""2021-10-26 22:25:58 - HikariPool-1 - Start completed.
+""2021-10-26 22:25:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2021-10-26 22:25:58 - HHH000412: Hibernate ORM core version 5.4.32.Final
+""2021-10-26 22:25:59 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2021-10-26 22:25:59 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+""2021-10-26 22:26:01 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2021-10-26 22:26:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:26:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2021-10-26 22:26:02 - Exposing 1 endpoint(s) beneath base path '/actuator'
+""2021-10-26 22:26:03 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2021-10-26 22:26:03 - Will secure Ant [pattern='/authenticate', POST] with []
+""2021-10-26 22:26:03 - Will secure Ant [pattern='/**', OPTIONS] with []
+""2021-10-26 22:26:03 - Will secure Ant [pattern='/', GET] with []
+""2021-10-26 22:26:03 - Will secure Ant [pattern='/h2-console/**/**'] with []
+""2021-10-26 22:26:03 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@697ca1fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@4256e2b0, org.springframework.security.web.header.HeaderWriterFilter@3c338f77, org.springframework.security.web.authentication.logout.LogoutFilter@25b3a6e2, com.phanhlearning.rest.webservices.restfulwebservices.auth.jwt.JwtTokenAuthorizationOncePerRequestFilter@5724947f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28247327, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15017c59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b56eceb, org.springframework.security.web.session.SessionManagementFilter@5653725e, org.springframework.security.web.access.ExceptionTranslationFilter@538b5dfd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a89816]
+""2021-10-26 22:26:04 - LiveReload server is running on port 35729
+""2021-10-26 22:26:04 - Tomcat started on port(s): 8080 (http) with context path ''
+""2021-10-26 22:26:04 - Context refreshed
+""2021-10-26 22:26:04 - Found 1 custom documentation plugin(s)
+""2021-10-26 22:26:04 - Scanning for api listing references
+""2021-10-26 22:26:05 - Generating unique operation named: helloWorldBeanUsingGET_1
+""2021-10-26 22:26:05 - Generating unique operation named: helloWorldBeanUsingGET_2
+""2021-10-26 22:26:05 - Generating unique operation named: handleUsingGET_1
+""2021-10-26 22:26:05 - Generating unique operation named: deleteTodoUsingDELETE_1
+""2021-10-26 22:26:05 - Generating unique operation named: getAllTodosUsingGET_1
+""2021-10-26 22:26:05 - Generating unique operation named: getTodoUsingGET_1
+""2021-10-26 22:26:05 - Generating unique operation named: saveTodoUsingPOST_1
+""2021-10-26 22:26:05 - Generating unique operation named: updateTodoUsingPUT_1
+""2021-10-26 22:26:05 - Started RestfulWebServicesApplication in 17.377 seconds (JVM running for 21.136)
+""2021-10-26 22:26:06 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-10-26 22:26:06 - Initializing Servlet 'dispatcherServlet'
+""2021-10-26 22:26:06 - Completed initialization in 5 ms
+""2021-10-26 22:26:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2021-10-26 22:26:53 - HikariPool-1 - Shutdown initiated...
+""2021-10-26 22:26:53 - HikariPool-1 - Shutdown completed.
+"

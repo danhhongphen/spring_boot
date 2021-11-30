@@ -1,0 +1,113 @@
+2021-11-30 14:50:25.549  INFO DESKTOP-0MP5R12 --- [  restartedMain] es.web.res.RestfulWebServicesApplication logStarting:55 : Starting RestfulWebServicesApplication using Java 1.8.0_291 on DESKTOP-0MP5R12 with PID 17304 (D:\Learning\Project\restful-web-services\target\classes started by prima in D:\Learning\Project\restful-web-services)
+2021-11-30 14:50:25.569 DEBUG DESKTOP-0MP5R12 --- [  restartedMain] es.web.res.RestfulWebServicesApplication logStarting:56 : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-30 14:50:25.571  INFO DESKTOP-0MP5R12 --- [  restartedMain] es.web.res.RestfulWebServicesApplication logStartupProfileInfo:659 : No active profile set, falling back to default profiles: default
+2021-11-30 14:50:25.652  INFO DESKTOP-0MP5R12 --- [  restartedMain] nv.DevToolsPropertyDefaultsPostProcessor logTo:255 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-30 14:50:25.653  INFO DESKTOP-0MP5R12 --- [  restartedMain] nv.DevToolsPropertyDefaultsPostProcessor logTo:255 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-30 14:50:28.425  INFO DESKTOP-0MP5R12 --- [  restartedMain] .rep.con.RepositoryConfigurationDelegate registerRepositoriesIn:132 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-30 14:50:28.532  INFO DESKTOP-0MP5R12 --- [  restartedMain] .rep.con.RepositoryConfigurationDelegate registerRepositoriesIn:201 : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interfaces.
+2021-11-30 14:50:29.264  INFO DESKTOP-0MP5R12 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker postProcessAfterInitialization:376 : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@27c59ed4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 14:50:29.275  INFO DESKTOP-0MP5R12 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker postProcessAfterInitialization:376 : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 14:50:29.650  INFO DESKTOP-0MP5R12 --- [  restartedMain] org.spr.boo.web.emb.tom.TomcatWebServer  initialize:108 : Tomcat initialized with port(s): 8080 (http)
+2021-11-30 14:50:29.969  INFO DESKTOP-0MP5R12 --- [  restartedMain] r.con.ServletWebServerApplicationContext prepareWebApplicationContext:290 : Root WebApplicationContext: initialization completed in 4315 ms
+2021-11-30 14:50:30.346 DEBUG DESKTOP-0MP5R12 --- [  restartedMain] wtTokenAuthorizationOncePerRequestFilter init:242 : Filter 'jwtTokenAuthorizationOncePerRequestFilter' configured for use
+2021-11-30 14:50:30.377  WARN DESKTOP-0MP5R12 --- [  restartedMain] ConfigServletWebServerApplicationContext refresh:591 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: ${JDBC_DATABASE_DRIVER}
+2021-11-30 14:50:30.433  INFO DESKTOP-0MP5R12 --- [  restartedMain] ConditionEvaluationReportLoggingListener logMessage:136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-30 14:50:30.462 ERROR DESKTOP-0MP5R12 --- [  restartedMain] org.spr.boo.SpringApplication            reportFailure:843 : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: ${JDBC_DATABASE_DRIVER}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.phanhlearning.rest.webservices.restfulwebservices.RestfulWebServicesApplication.main(RestfulWebServicesApplication.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: ${JDBC_DATABASE_DRIVER}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 26 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: ${JDBC_DATABASE_DRIVER}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 40 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: ${JDBC_DATABASE_DRIVER}
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:242)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:194)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 41 more
+2021-11-30 15:07:15.275  INFO DESKTOP-0MP5R12 --- [  restartedMain] es.web.res.RestfulWebServicesApplication logStarting:55 : Starting RestfulWebServicesApplication using Java 1.8.0_291 on DESKTOP-0MP5R12 with PID 17636 (D:\Learning\Project\restful-web-services\target\classes started by prima in D:\Learning\Project\restful-web-services)
+2021-11-30 15:07:15.383 DEBUG DESKTOP-0MP5R12 --- [  restartedMain] es.web.res.RestfulWebServicesApplication logStarting:56 : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-11-30 15:07:15.385  INFO DESKTOP-0MP5R12 --- [  restartedMain] es.web.res.RestfulWebServicesApplication logStartupProfileInfo:659 : No active profile set, falling back to default profiles: default
+2021-11-30 15:07:15.512  INFO DESKTOP-0MP5R12 --- [  restartedMain] nv.DevToolsPropertyDefaultsPostProcessor logTo:255 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-30 15:07:15.512  INFO DESKTOP-0MP5R12 --- [  restartedMain] nv.DevToolsPropertyDefaultsPostProcessor logTo:255 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-30 15:07:18.776  INFO DESKTOP-0MP5R12 --- [  restartedMain] .rep.con.RepositoryConfigurationDelegate registerRepositoriesIn:132 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-30 15:07:18.910  INFO DESKTOP-0MP5R12 --- [  restartedMain] .rep.con.RepositoryConfigurationDelegate registerRepositoriesIn:201 : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interfaces.
+2021-11-30 15:07:19.590  INFO DESKTOP-0MP5R12 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker postProcessAfterInitialization:376 : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@53258a05' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 15:07:19.668  INFO DESKTOP-0MP5R12 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker postProcessAfterInitialization:376 : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 15:07:20.199  INFO DESKTOP-0MP5R12 --- [  restartedMain] org.spr.boo.web.emb.tom.TomcatWebServer  initialize:108 : Tomcat initialized with port(s): 8080 (http)
+2021-11-30 15:07:20.573  INFO DESKTOP-0MP5R12 --- [  restartedMain] r.con.ServletWebServerApplicationContext prepareWebApplicationContext:290 : Root WebApplicationContext: initialization completed in 5060 ms
+2021-11-30 15:07:20.853 DEBUG DESKTOP-0MP5R12 --- [  restartedMain] wtTokenAuthorizationOncePerRequestFilter init:242 : Filter 'jwtTokenAuthorizationOncePerRequestFilter' configured for use
+2021-11-30 15:07:24.917  INFO DESKTOP-0MP5R12 --- [  restartedMain] a.LocalContainerEntityManagerFactoryBean buildNativeEntityManagerFactory:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-30 15:07:24.989  WARN DESKTOP-0MP5R12 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration openEntityManagerInViewInterceptor:219 : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-30 15:07:26.996  INFO DESKTOP-0MP5R12 --- [  restartedMain] pr.boo.act.end.web.EndpointLinksResolver <init>:58 : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-11-30 15:07:27.350  INFO DESKTOP-0MP5R12 --- [  restartedMain] g.spr.sec.web.DefaultSecurityFilterChain <init>:51 : Will secure Ant [pattern='/authenticate', POST] with []
+2021-11-30 15:07:27.350  INFO DESKTOP-0MP5R12 --- [  restartedMain] g.spr.sec.web.DefaultSecurityFilterChain <init>:51 : Will secure Ant [pattern='/**', OPTIONS] with []
+2021-11-30 15:07:27.350  INFO DESKTOP-0MP5R12 --- [  restartedMain] g.spr.sec.web.DefaultSecurityFilterChain <init>:51 : Will secure Ant [pattern='/', GET] with []
+2021-11-30 15:07:27.350  INFO DESKTOP-0MP5R12 --- [  restartedMain] g.spr.sec.web.DefaultSecurityFilterChain <init>:51 : Will secure Ant [pattern='/h2-console/**/**'] with []
+2021-11-30 15:07:27.392  INFO DESKTOP-0MP5R12 --- [  restartedMain] g.spr.sec.web.DefaultSecurityFilterChain <init>:51 : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12b7363c, org.springframework.security.web.context.SecurityContextPersistenceFilter@34f862a9, org.springframework.security.web.header.HeaderWriterFilter@42771f88, org.springframework.security.web.authentication.logout.LogoutFilter@6302ca3c, com.phanhlearning.rest.webservices.restfulwebservices.auth.jwt.JwtTokenAuthorizationOncePerRequestFilter@29348dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7372fc70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31ed6878, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d69bcb2, org.springframework.security.web.session.SessionManagementFilter@3d999dac, org.springframework.security.web.access.ExceptionTranslationFilter@531b7335, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55494111]
+2021-11-30 15:07:27.668  INFO DESKTOP-0MP5R12 --- [  restartedMain] spr.boo.dev.aut.OptionalLiveReloadServer startServer:58 : LiveReload server is running on port 35729
+2021-11-30 15:07:28.072  INFO DESKTOP-0MP5R12 --- [  restartedMain] org.spr.boo.web.emb.tom.TomcatWebServer  start:220 : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-30 15:07:28.675  INFO DESKTOP-0MP5R12 --- [  restartedMain] es.web.res.RestfulWebServicesApplication logStarted:61 : Started RestfulWebServicesApplication in 14.135 seconds (JVM running for 19.136)
+2021-11-30 15:07:28.790  INFO DESKTOP-0MP5R12 --- [(3)-192.168.1.3] org.spr.web.ser.DispatcherServlet        initServletBean:525 : Initializing Servlet 'dispatcherServlet'
+2021-11-30 15:07:28.793  INFO DESKTOP-0MP5R12 --- [(3)-192.168.1.3] org.spr.web.ser.DispatcherServlet        initServletBean:547 : Completed initialization in 2 ms
+2021-11-30 15:12:05.499 DEBUG DESKTOP-0MP5R12 --- [nio-8080-exec-1] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:38 : Authentication Request For 'http://localhost:8080/'
+2021-11-30 15:12:05.499  WARN DESKTOP-0MP5R12 --- [nio-8080-exec-1] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:54 : JWT_TOKEN_DOES_NOT_START_WITH_BEARER_STRING
+2021-11-30 15:12:05.499 DEBUG DESKTOP-0MP5R12 --- [nio-8080-exec-1] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:57 : JWT_TOKEN_USERNAME_VALUE 'null'
+2021-11-30 15:12:25.473 DEBUG DESKTOP-0MP5R12 --- [nio-8080-exec-4] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:38 : Authentication Request For 'http://localhost:8080/users'
+2021-11-30 15:12:25.473  WARN DESKTOP-0MP5R12 --- [nio-8080-exec-4] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:54 : JWT_TOKEN_DOES_NOT_START_WITH_BEARER_STRING
+2021-11-30 15:12:25.474 DEBUG DESKTOP-0MP5R12 --- [nio-8080-exec-4] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:57 : JWT_TOKEN_USERNAME_VALUE 'null'
+2021-11-30 15:12:25.884 DEBUG DESKTOP-0MP5R12 --- [nio-8080-exec-5] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:38 : Authentication Request For 'http://localhost:8080/favicon.ico'
+2021-11-30 15:12:25.884  WARN DESKTOP-0MP5R12 --- [nio-8080-exec-5] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:54 : JWT_TOKEN_DOES_NOT_START_WITH_BEARER_STRING
+2021-11-30 15:12:25.885 DEBUG DESKTOP-0MP5R12 --- [nio-8080-exec-5] wtTokenAuthorizationOncePerRequestFilter doFilterInternal:57 : JWT_TOKEN_USERNAME_VALUE 'null'
+2021-11-30 15:13:26.004  INFO DESKTOP-0MP5R12 --- [ionShutdownHook] a.LocalContainerEntityManagerFactoryBean destroy:651 : Closing JPA EntityManagerFactory for persistence unit 'default'

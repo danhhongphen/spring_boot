@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+	<Properties>
+		<Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{3.} %M:%L : %m%n%ex</Property>
+	</Properties>
+	<Appenders>
+		<Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+		<!-- Rolling File Appender -->
+		<RollingFile name="FileAppender" fileName="${server.tomcat.basedir}/testdb.log" filePattern="${server.tomcat.basedir}/testdb-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout>
+				<Pattern>${LOG_PATTERN}</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<!-- <DefaultRolloverStrategy max="10" /> -->
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.phanhlearning" level="debug" />
+		<Logger name="org.springframework.web.client" level="debug" />
+		<logger name="org.hibernate" level="error"/>
+		<logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="error"/>
+		<Logger name="org.thymeleaf.TemplateEngine" level="error" />
+		<Logger name="org.thymeleaf.ConfigurationPrinterHelper" level="off" />
+		<Logger name="org.apache.commons.digester" level="off" />
+		<Logger name="org" level="error" />
+		<Logger name="com" level="error" />
+		<Logger name="org.springframework" level="info" />
+		
+		<logger name="org.hibernate.SQL" level="off"/>
+
+		<Root level="error">
+			<AppenderRef ref="ConsoleAppender" />
+			<AppenderRef ref="FileAppender" />
+		</Root>
+	</Loggers>
+</Configuration>
